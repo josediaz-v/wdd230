@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&amp;family=Roboto&amp;display=swap');
+
+:root{
+    --primary-color: #154A82;
+    --secondary-color: #44301E;
+    --primary-color--transparent: #154A8280;
+    --secondary-color-transparent: #44301E80;
+
+    --accent1-color: #FFFFFF;
+    --accent2-color: #FFBF52;    
+    --accent1-color-transparent: #FFFFFF80;
+    --accent2-color-transparent: #FFBF5280;    
+
+    --heading-font: 'Arial', sans-serif;
+    --paragraph-font: Merriweather, Georgia, serif;
+
+    --nav-background-color: #253C78;
+    --nav-link-color: #EFB53B;
+    --nav-hover-link-color: #FFEECF;
+    --nav-hover-background-color: #33222A;
+}
+
+header{
+    background-color: var(--primary-color);
+}
+
+header p{
+    grid-column: 2/3;
+    padding: 1rem;
+}
+
+span{    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+span img{
+    max-height: 10rem;
+    grid-column: 1/2;
+    padding: 1rem;
+}
+
+nav{
+    background-color: var(--secondary-color);
+    height: 12rem;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 12rem;
+    padding: 0%;
+}
+
+nav ul li{
+    flex: 1 1 100%;
+    padding-top: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+nav li:hover{
+    background-color: var(--accent2-color);
+    width: 100%;
+}
+
+nav a:hover{
+    color: var(--secondary-color);
+}
+
+.active{
+    color: var(--accent1-color-transparent);
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    justify-content: space-around;
+}
+
+main h2{
+    text-align: center;
+    height: 3rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    margin: 1rem;
+}
+
+.card ul{    
+    list-style-type: none;
+}
+
+footer{
+    text-align: center;
+}
