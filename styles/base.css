@@ -13,11 +13,6 @@
 
     --heading-font: 'Arial', sans-serif;
     --paragraph-font: Merriweather, Georgia, serif;
-
-    --nav-background-color: #253C78;
-    --nav-link-color: #EFB53B;
-    --nav-hover-link-color: #FFEECF;
-    --nav-hover-background-color: #33222A;
 }
 
 header{
@@ -29,7 +24,7 @@ header p{
     padding: 1rem;
 }
 
-span{    
+header span{    
     display: grid;
     justify-content: center;
     align-items: center;
@@ -60,6 +55,7 @@ nav ul{
 nav ul li{
     flex: 1 1 100%;
     padding-top: 1rem;
+    width: 100%;
 }
 
 nav a{
@@ -102,5 +98,12 @@ main h2{
 }
 
 footer{
+    align-content: center;
     text-align: center;
+    background-color: var(--primary-color);
+    height: 5rem;
+}
+
+footer .lastModified{
+    color: var(--accent2-color);
 }
