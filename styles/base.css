@@ -19,7 +19,8 @@ header{
     background-color: var(--primary-color);
 }
 
-header p{
+header h1{
+    color: var(--accent1-color);
     grid-column: 2/3;
     padding: 1rem;
 }
@@ -31,9 +32,10 @@ header span{
     justify-items: center;
 }
 span img{
-    max-height: 10rem;
+    max-height: 8rem;
+    margin: 1rem;
     grid-column: 1/2;
-    padding: 1rem;
+    box-shadow: 0 0 20px 2px #000;
 }
 
 nav{
@@ -78,8 +80,8 @@ nav a:hover{
 
 main {
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr;
     justify-content: space-around;
+    grid-template-rows: 0.1fr 1fr 1fr;
 }
 
 main h2{
@@ -91,6 +93,16 @@ main h2{
     border-radius: 0.5rem;
     border: 1px solid gray;
     margin: 1rem;
+    box-shadow: 0 0 20px 2px #000;
+}
+
+.card h2{
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    padding-top: 1rem;
+    margin: 0%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
 .card ul{    
@@ -98,12 +110,14 @@ main h2{
 }
 
 footer{
+    color: var(--accent1-color);
     align-content: center;
     text-align: center;
     background-color: var(--primary-color);
     height: 5rem;
 }
 
-footer .lastModified{
+footer #lastModified{
     color: var(--accent2-color);
+    font-size: small;
 }

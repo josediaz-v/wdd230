@@ -21,7 +21,7 @@
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 4fr;
+        grid-template-rows: 0.1fr 1fr;
         justify-content: space-around;
     }
 
@@ -33,5 +33,11 @@
     main h2{
         text-align: center;
         height: 3rem;
+    }
+
+    footer{        
+        position:fixed;
+        width: 99%;
+        bottom: 0;
     }
 }
