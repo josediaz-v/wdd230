@@ -16,22 +16,22 @@
 }
 
 header{
+    font-family: var(--heading-font);
     background-color: var(--primary-color);
-}
-
-header h1{
-    color: var(--accent1-color);
-    grid-column: 2/3;
-    padding: 1rem;
-}
-
-header span{    
     display: grid;
     justify-content: center;
     align-items: center;
     justify-items: center;
 }
-span img{
+
+header span{
+    font-size: 2rem;
+    color: var(--accent1-color);
+    grid-column: 2/3;
+    padding: 1rem;
+}
+
+header img{
     max-height: 8rem;
     margin: 1rem;
     grid-column: 1/2;
@@ -39,6 +39,7 @@ span img{
 }
 
 nav{
+    font-family: var(--heading-font);
     background-color: var(--secondary-color);
     height: 12rem;
     text-align: center;
@@ -79,6 +80,7 @@ nav a:hover{
 }
 
 main {
+    font-family: var(--paragraph-font);
     display: grid;
     justify-content: space-around;
     grid-template-rows: 0.1fr 1fr 1fr;
@@ -110,6 +112,7 @@ main h2{
 }
 
 footer{
+    font-family: var(--heading-font);
     color: var(--accent1-color);
     align-content: center;
     text-align: center;
