@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&amp;family=Roboto&amp;display=swap');
-
 :root{
     --primary-color: #154A82;
     --secondary-color: #44301E;
@@ -12,7 +10,8 @@
     --accent2-color-transparent: #FFBF5280;    
 
     --heading-font: 'Arial', sans-serif;
-    --paragraph-font: Merriweather, Georgia, serif;
+    --paragraph-font: 'Merriweather', Georgia, serif;
+    --footer-font: 'Roboto', serif;
 }
 
 header{
@@ -113,7 +112,7 @@ main h2{
 }
 
 footer{
-    font-family: var(--heading-font);
+    font-family: var(--footer-font);
     color: var(--accent1-color);
     align-content: center;
     text-align: center;
