@@ -8,6 +8,12 @@
         height: 3rem;
     }
 
+    nav li:hover{
+        height: 1rem;
+        padding-top: 0.9rem;
+        padding-bottom: 1.1rem;
+    }
+
     nav ul li{
         padding: 0%;
     }
