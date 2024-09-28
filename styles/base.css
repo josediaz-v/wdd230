@@ -37,14 +37,51 @@ header img{
     box-shadow: 0 0 20px 2px #000;
 }
 
-nav{
+#mode {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--accent1-color-transparent);
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation{
+    height: 0px;
+    display: none;
+}
+
+.navigation.open{
     font-family: var(--heading-font);
     background-color: var(--secondary-color);
     height: 12rem;
     text-align: center;
+    display: block;
 }
 
-nav ul{
+.navigation li:hover{
+    height: 0px;
+}
+
+.navigation ul{
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -54,23 +91,23 @@ nav ul{
     padding: 0%;
 }
 
-nav ul li{
+.navigation ul li{
     flex: 1 1 100%;
     padding-top: 1rem;
     width: 100%;
 }
 
-nav a{
+.navigation a{
     text-decoration: none;
     color: var(--accent1-color);
 }
 
-nav li:hover{
+.navigation li:hover{
     background-color: var(--accent2-color);
     width: 100%;
 }
 
-nav a:hover{
+.navigation a:hover{
     color: var(--secondary-color);
     text-decoration: underline;
 }

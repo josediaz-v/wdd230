@@ -1,21 +1,37 @@
-@media screen and (min-width: 600px) {
-    nav{        
+@media screen and (min-width: 600px) { 
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+    
+    .navigation.open, .navigation{        
         height: 3rem;
+        font-family: var(--heading-font);
+        background-color: var(--secondary-color);
+        text-align: center;
+        display: block;
     }
 
-    nav ul{
+    .navigation ul{
         flex-direction: row;
         height: 3rem;
     }
 
-    nav li:hover{
+    .navigation li:hover{
         height: 1rem;
         padding-top: 0.9rem;
         padding-bottom: 1.1rem;
     }
 
-    nav ul li{
+    .navigation ul li{
         padding: 0%;
+    }
+
+    html {
+        height: 88%;
+    }
+
+    body{
+        height: 85%;
     }
 
     main {
@@ -23,6 +39,11 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 0.1fr 1fr;
         justify-content: space-around;
+        height: 100%;
+    }
+
+    .card {
+        height: 50%;
     }
 
     main h1{
@@ -37,7 +58,7 @@
 
     footer{        
         position:fixed;
-        width: 99%;
+        width: 100%;
         bottom: 0;
     }
 }
