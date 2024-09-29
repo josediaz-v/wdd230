@@ -1,0 +1,157 @@
+:root{
+    --primary-color: #012d56;
+    --secondary-color: #ffd561;
+    --secondary-color-transparent: #ffd56180;
+    --tertiary-color:#801308;
+    --accent1-color: #ffffff;
+    --accent2-color: #550e06;
+    --accent3-color: #daa039;
+
+    --title-font: 'Roboto', sans-serif;
+    --text-font: 'Merriweather', sans-serif;
+}
+
+header{
+    font-family: var(--title-font);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header img{
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+header h1{
+    color: var(--secondary-color);
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color:  var(--secondary-color-transparent);
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+
+}
+
+#menu.open::before {
+	content: "✖️";
+}
+
+.navigation{
+    height: 0px;
+    display: none;
+}
+
+.navigation.open{
+    font-family: var(--heading-font);
+    background-color: var(--tertiary-color);
+    height: 12rem;
+    text-align: center;
+    font-family: var(--title-font);
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 12rem;
+    padding: 0%;
+}
+
+a{
+    color: var(--accent1-color);
+    text-decoration:none;
+}
+
+.navigation ul li{
+    flex: 1 1 100%;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.navigation a:hover{
+    color: var(--accent3-color);
+    text-decoration: underline;
+}
+
+.navigation li:hover{
+    background-color: var(--accent2-color);
+    width: 100%;
+}
+
+.active{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+main{
+    display: grid;
+    grid-gap: 1rem;
+    justify-items: center;
+    padding: 1rem;
+}
+
+main section{
+    font-family: var(--text-font);
+    border: solid 1px var(--primary-color);
+    width: 95%;
+}
+
+main section h2{
+    font-family: var(--title-font);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    margin: 0;
+}
+
+main section p{
+    padding: 1rem;
+}
+
+main img{
+    padding: 1rem;
+    width: 20rem;
+}
+
+.hero {
+    text-align: center;
+}
+
+.elfsight-app-50535a9b-a163-4486-9c3e-4d0ac854f757{
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer{
+    font-family: var(--text-font);
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}

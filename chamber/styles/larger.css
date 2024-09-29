@@ -1,0 +1,68 @@
+@media screen and (min-width: 600px) {
+
+    html {
+        height: 100%;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    #menu {
+		display: none;
+	}
+    
+    .navigation.open, .navigation{
+        font-family: var(--heading-font);
+        background-color: var(--tertiary-color);
+        height: 3rem;
+        text-align: center;
+        display: block;
+    }
+    
+    .navigation ul{
+        flex-direction: row;
+        height: 3rem;
+    }
+
+    .navigation ul li{
+        padding: 0%;
+    }
+
+    .navigation li:hover{
+        height: 1rem;
+        padding-top: 0.9rem;
+        padding-bottom: 1.1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 100%;
+    }
+    
+    .hero {
+        grid-column: 1/2;
+        width: 100%;
+    }
+
+    .action {
+        grid-column: 2/3;
+        width: 100%;
+    }
+
+    .weather {
+        grid-column: 3/4;
+        width: 100%;
+    }
+
+    .events{
+        grid-column: 1/4;
+        width: 100%;
+    }
+
+    .spotlights {
+        grid-column: 1/4;
+        width: 100%;
+    }
+}
