@@ -30,7 +30,6 @@ header h1{
 }
 
 nav{
-    font-family: var(--heading-font);
     background-color: var(--tertiary-color);
     height: 12rem;
     text-align: center;

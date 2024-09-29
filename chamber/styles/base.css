@@ -59,16 +59,15 @@ header h1{
 }
 
 .navigation{
+    font-family: var(--title-font);
     height: 0px;
     display: none;
 }
 
 .navigation.open{
-    font-family: var(--heading-font);
     background-color: var(--tertiary-color);
     height: 12rem;
     text-align: center;
-    font-family: var(--title-font);
     display: block;
 }
 

@@ -13,7 +13,7 @@
 	}
     
     .navigation.open, .navigation{
-        font-family: var(--heading-font);
+        font-family: var(--title-font);
         background-color: var(--tertiary-color);
         height: 3rem;
         text-align: center;
