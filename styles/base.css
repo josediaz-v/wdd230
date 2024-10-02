@@ -44,6 +44,7 @@ header img{
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
+    color: var(--accent2-color);
 }
 
 #menu {
