@@ -129,6 +129,10 @@ main h2{
     height: 3rem;
 }
 
+main a {
+    color: var(--primary-color);
+}
+
 .card {
     border-radius: 0.5rem;
     border: 1px solid gray;
