@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-            <img src="images/picture.jpg" alt="Jose Diaz">
+            <img src="images/picture.webp" alt="Jose Diaz">
             <span>Jose Diaz</span>
             <div id="mode">🕶️</div>
     </header>
@@ -34,6 +34,12 @@
         </ul>
     </nav>
     <main>
+        <picture class="hero">
+            <div class="temple">Hartford Connecticut Temple</div>
+            <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-large.webp" alt="Hartford Connecticut Temple" width="1280" height="800">
+        </picture>
         <h1>WDD 230: Web Frontend Development</h1>
         
         <section class="card">
@@ -49,12 +55,17 @@
         </section>
         <section class="card">
             <h2>Information</h2>
+            <p>Visit Count: <span class="visits"></span></p>
         </section>
     </main>
+    <iframe class="iframe" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48331.306958102854!2d-74.06208816845354!3d40.79046212361285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25804d4293b57%3A0x5efe2629bb9f9381!2sNorth%20Bergen%2C%20NJ!5e0!3m2!1sen!2sus!4v1728006918910!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>&copy;<span id="year"></span> 🎮🎸 Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey, United States</p>
         <p id="lastModified">Last Modification: </p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamButton.js"></script>
+    <script src="scripts/modeButton.js"></script>
+    <script src="scripts/visitsCounter.js"></script>
 </body>
 </html>
