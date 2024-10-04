@@ -136,7 +136,7 @@ main a {
 
 .temple {
     position: absolute;
-    top: 5rem;
+    top: 25rem;
     left: 2rem;
     background-color: var(--accent1-color-transparent);
     padding: 1rem;
@@ -145,10 +145,6 @@ main a {
     color: var(--secondary-color);
     font-family: var(--heading-font);
     box-shadow: 0 0 20px 2px var(--primary-color--transparent);
-}
-
-.hero {
-    position: relative;
 }
 
 .hero img {

@@ -1,6 +1,6 @@
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
-const links = document.querySelectorAll("#link");
+const links = document.querySelectorAll(".link");
 const body = document.querySelector("body");
 //const map = document.querySelector("iframe");
 
