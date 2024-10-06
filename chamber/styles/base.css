@@ -150,27 +150,20 @@ main img{
 .discoverCalendar {
     grid-column: 1/2;
     grid-row: 3/4;
-    border: 0;
+    padding: 1rem;
 }
 
 .calendar {
     border:solid 1px #777;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
+    border: 0;
 }
 
 .elfsight-app-50535a9b-a163-4486-9c3e-4d0ac854f757{
     display: grid;
     justify-content: center;
-    padding: 1rem;
-}
-
-footer{
-    font-family: var(--text-font);
-    background-color: var(--accent3-color);
-    color: var(--primary-color);
-    text-align: center;
     padding: 1rem;
 }
 
@@ -180,6 +173,11 @@ section {
 
 }
 
+.discoverVisits {
+    font-size: larger;
+    font-family: var(--title-font);
+}
+
 figure {
     font-family: var(--title-font);
 }
@@ -187,6 +185,14 @@ figure {
 figure img {
     animation: fade 15s;
     box-shadow: 0 0 20px 0.1px var(--primary-color);
+}
+
+footer{
+    font-family: var(--text-font);
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
 }
 
 @keyframes fade {
