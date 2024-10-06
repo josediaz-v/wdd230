@@ -35,28 +35,57 @@
         padding-bottom: 1.1rem;
     }
 
-    main {
+    .indexMain {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 100%;
+        height: auto;;
+    }    
+
+    .discoverMain {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 0.5fr 1fr 3fr 0.5fr;
+        grid-template-rows: repeat(6, 0.5fr);
+        height: auto;
     }
-    
-    .hero {
+
+    .indexHero {
         grid-column: 1/2;
         width: 100%;
+        height: 100%;
     }
 
-    .action {
+    .indexAction {
         grid-column: 2/3;
         width: 100%;
+        height: 100%;
     }
 
-    .weather {
+    .indexWeather {
         grid-column: 3/4;
         width: 100%;
     }
 
-    .events{
+    .discoverAttractions {
+        grid-column: 2/3;
+        height: auto;
+        min-height: 70%;
+    }
+
+    .discoverWeather {
+        grid-column: 2/3;
+    }
+
+    .discoverCalendar {
+        grid-column: 2/3;
+    }
+
+    .discoverVisits {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .indexEvents{
         grid-column: 1/4;
         width: 100%;
     }
@@ -64,5 +93,23 @@
     .spotlights {
         grid-column: 1/4;
         width: 100%;
+    }
+
+    figure {
+        grid-column: 3/4;
+    }
+
+    figure img {
+        width: 550px;
+    }
+
+    figure:hover > img{
+        background-color: var(--secondary-color-transparent);
+        box-shadow: 0 0 50px 0.1px var(--primary-color);
+    }
+
+    figure:hover > figcaption {
+        font-weight: bold;
+        font-family: var(--title-font);
     }
 }

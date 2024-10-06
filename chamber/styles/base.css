@@ -113,6 +113,8 @@ main{
     grid-gap: 1rem;
     justify-items: center;
     padding: 1rem;
+    height: auto;
+    text-align: center;
 }
 
 main section{
@@ -127,6 +129,8 @@ main section h2{
     color: var(--secondary-color);
     padding: 1rem;
     margin: 0;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
 }
 
 main section p{
@@ -137,9 +141,23 @@ main img{
     padding: 1rem;
     width: 20rem;
 }
+    
+.discoverWeather {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
 
-.hero {
-    text-align: center;
+.discoverCalendar {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: 0;
+}
+
+.calendar {
+    border:solid 1px #777;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
 }
 
 .elfsight-app-50535a9b-a163-4486-9c3e-4d0ac854f757{
@@ -154,4 +172,29 @@ footer{
     color: var(--primary-color);
     text-align: center;
     padding: 1rem;
+}
+
+section {
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0.1px var(--primary-color);
+
+}
+
+figure {
+    font-family: var(--title-font);
+}
+
+figure img {
+    animation: fade 15s;
+    box-shadow: 0 0 20px 0.1px var(--primary-color);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1  ;
+    }
 }
