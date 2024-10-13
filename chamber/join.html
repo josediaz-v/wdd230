@@ -32,16 +32,13 @@
             <li><a href="">Join</a></li>
         </ul>
     </nav>
-    <main class="indexMain">        
+    <main class="formMain">        
         <form method="get" action="thankyou.html" class="form1">
             <fieldset>
                 <label>First Name <input type="text" id="fname" name="fname" required></label>
-                <label>Password <input type="password" id="pwd1" name="password1" pattern="[A-Za-z{8,}]" required></label>
-                <label>Repeat Password <input type="password" id="pwd2" name="password2" pattern="[A-Za-z{8,}]" required></label>
-                <div id="pwd3"></div>
+                <label>First Name <input type="text" id="lname" name="lname" required></label>
+                <label>Title or Possition <input type="text" id="title" name="title" pattern="[A-Za-z{8,}]"></label>
                 <label>Email <input type="email" id="email" name="email" pattern='[a-zA-Z0-9._%+-]+@byui\.edu$" or [a-zA-Z0-9._%+\-]+@byui\.edu' title="Please enter a valid email address" required></label>
-                
-                <label class="rangeLabel">Page Rating <input type="range" id="rating" value="0" name="rating" min="0" max="10" step="1"></label><div id="rangevalue">0</div>
                 <input type="submit" value="Rate Page">
             </fieldset>
         </form>
