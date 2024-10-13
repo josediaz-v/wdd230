@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <form method="get" action="record.html" class="form1">
+            <fieldset>
+                <label>Username <input type="text" id="fname" name="fname" required></label>
+                <label>Password <input type="password" id="pwd1" name="password1" pattern="[A-Za-z{8,}]" required></label>
+                <label>Repeat Password <input type="password" id="pwd2" name="password2" pattern="[A-Za-z{8,}]" required></label>
+                <div id="pwd3"></div>
+                <label>Email <input type="email" id="email" name="email" pattern='[a-zA-Z0-9._%+-]+@byui\.edu$" or [a-zA-Z0-9._%+\-]+@byui\.edu' title="Please enter a valid email address" required></label>
+                
+                <label class="rangeLabel">Page Rating <input type="range" id="rating" value="0" name="rating" min="0" max="10" step="1"></label><div id="rangevalue">0</div>
+                <input type="submit" value="Rate Page">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+    </footer>
+    <script src="scripts/displayRangeValue.js"></script>
+    <script src="scripts/passwordVerifier.js"></script>
+</body>
+</html>
