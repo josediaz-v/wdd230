@@ -122,4 +122,13 @@
         font-weight: bold;
         font-family: var(--title-font);
     }
+    
+    .benefitsTable {
+        grid-column: 2/3;
+    }
+    
+    .thankyouMain {
+        align-items: baseline;
+    }
+
 }

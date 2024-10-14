@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Record</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Jose Diaz, North Bergen Chamber of Commerce">
+    <meta name="author" content="Jose Diaz">
+    <title>North Bergen Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Jose Diaz - North Bergen Chamber of Commerce"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://businessviewmagazine.com/wp-content/uploads/2023/06/Township-of-North-Bergen-New-Jersey-Hudson-County-Manhattan-view-5.jpg"/>
+    <meta property="og:url" content="https://www.jdiaz.com" />
 </head>
 <body>
     <header>
-
-    </header>
-    <nav>
-        
+        <img src="images/logo.webp" alt="North Bergen">
+        <h1>NORTH BERGEN CHAMBER OF COMMERCE</h1>
+        <div id="mode">🌚</div>
+    </header>   
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+        </ul>
     </nav>
-    <main>
+    <main class="thankyouMain">
         Thank you for joining our page.
     </main>
     <footer>
-
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey, United States</p>
+        <p id="lastModified">Last Modification: </p>
     </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 </html>

@@ -5,14 +5,10 @@
     --tertiary-color:#801308;
     --accent1-color: #ffffff;
     --accent2-color: #550e06;
-    --accent3-color: #daa039;    
-    --color1: #9c2c13;
-    --color2: #6f200e;
-    --color3: #07a302;
-    --color4: #eee;
-    --color5: #999;
-    --color6: #555;
-    --color7: #fff;
+    --accent3-color: #daa039; 
+    --accent4-color: #07a302; 
+    --accent5-color: #eee;
+    --accent6-color: #8ea9c288;
 
     --title-font: 'Roboto', sans-serif;
     --text-font: 'Merriweather', sans-serif;
@@ -161,7 +157,7 @@ main img{
 }
 
 .calendar {
-    border:solid 1px #777;
+    border:solid 1px var(--accent6-color);
     width: 300px;
     height: 300px;
     border-radius: 10px;
@@ -195,69 +191,155 @@ figure img {
 }
 
 /*Join form */
-
 .formMain {
     text-align: left;
 }
 
-.form1 {
+.joinForm {
+    grid-column: 1/2;
     font-family: var(--paragraph-font);
     width: 100%;
     max-width: 500px;
     padding: 2rem;
 }
 
-.form1 fieldset {
+.joinForm fieldset {
     padding: 5% 7% 5% 7%;
-    border: solid 1px var(--color5);
+    margin: 2rem 0;
+    border: solid 1px var(--primary-color);
+    min-width: 27rem;
     border-radius: 1rem;
+    box-shadow: 1px 1px 4px var(--primary-color);
 }
 
-.form1 label, #rangevalue {
-    padding-top: 1rem;
+.joinForm label, #rangevalue {
     display: block;
-    color: var(--color1);
+    color: var(--tertiary-color);
     font-size: 1rem;
+    margin-top: 1rem;
+}
+.joinForm label:not(.radio) {
+    padding-top: 1rem;
 }
 
-.form1 input[type="text"], 
-.form1 input[type="password"],
-.form1 input[type="email"] {
-    background-color: var(--color4);
+.joinForm input[type="text"], 
+.joinForm input[type="tel"],
+.joinForm input[type="email"] {
+    background-color: var(--accent5-color);
     display: block;
-    border: solid 1px var(--color5);
+    border: solid 1px var(--accent2-color);
     border-radius: 6px;
     padding: .75rem;
-    color: var(--color5);
+    color: var(--primary-color);
     width: 100%;
     max-width: 400px;
     appearance: none;
 }
 
-.form1 input[type="submit"] {
+.joinForm input[type="radio"] {
+    margin-right: 6px;
+}
+
+.joinForm legend {
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    padding: 0 .5rem;
+    font-size: 1.3rem;
+}
+
+.joinForm div {
+    padding-top: 1.5rem;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.joinForm input[type="submit"] {
     font-family: var(--paragraph-font);
     font-size: medium;
     border: none;
-    background-image: linear-gradient(var(--color1), var(--color2));
-    color: var(--color7);
+    background-image: linear-gradient(var(--tertiary-color), var(--accent2-color));
+    color: var(--accent1-color);
     border-radius: 6px;
     padding: .8rem;
     width: 96%;
     max-width: 300px;
     margin: 1rem 5% 1rem .5%;
-    box-shadow: 1px 1px 4px var(--color5);
+    box-shadow: 1px 1px 4px var(--accent2-color);
 }
 
-.form1 input:required {
-    border-right: solid 8px var(--color1);
+.joinForm input:required {
+    border-right: solid 8px var(--tertiary-color);
 }
 
-.form1 input:required:valid {
-    border-right: solid 8px var(--color3);
+.joinForm input:required:valid {
+    border: solid 1px var(--primary-color);
+    border-right: solid 8px var(--accent4-color);
+}
+
+.thankyouMain {
+    align-items: center;
+    padding: 100px;
+    height: 100%;
+    min-height: 500px;
+    max-height: 720px;
+    font-size: larger;
+    font-family: var(--text-font);
+}
+
+/* Benefits Table */
+.benefitsTable {
+    grid-column: 1/2;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.benefitsTable thead {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+}
+
+.benefitsTable th {
+    background-color: var(--tertiary-color);
+    padding: 1rem;
+}
+
+.benefitsTable th:not(.tableTitle, :first-child, :last-child) {
+    border-right: solid 1px var(--primary-color );
+}
+
+.benefitsTable .tableTitle {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.benefitsTable th:first-child {
+    background-color: var(--primary-color);
+}
+
+.benefitsTable tbody {
+    font-family: var(--text-font);
+    font-size: large;
+}
+
+.benefitsTable td {
+    padding: 0.5rem;
+    font-weight: bold;
+	border: 1px solid var(--accent6-color);
+}
+
+.benefitsTable tr:nth-child(even) {
+    background-color: var(--accent6-color);
+}
+
+.benefitsTable caption {
+    font-family: var(--text-font-font);
+    caption-side: bottom;
+    padding-top: 1rem;
 }
 
 /* Footer */
-
 footer{
     font-family: var(--text-font);
     background-color: var(--accent3-color);

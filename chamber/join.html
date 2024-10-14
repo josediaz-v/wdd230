@@ -26,22 +26,75 @@
     <button id="menu"></button>
     <nav class="navigation">
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
         </ul>
     </nav>
     <main class="formMain">        
-        <form method="get" action="thankyou.html" class="form1">
+        <form id="joinForm" method="get" action="thankyou.html" class="joinForm">
             <fieldset>
+                <legend>Applicant Information</legend>
                 <label>First Name <input type="text" id="fname" name="fname" required></label>
-                <label>First Name <input type="text" id="lname" name="lname" required></label>
-                <label>Title or Possition <input type="text" id="title" name="title" pattern="[A-Za-z{8,}]"></label>
-                <label>Email <input type="email" id="email" name="email" pattern='[a-zA-Z0-9._%+-]+@byui\.edu$" or [a-zA-Z0-9._%+\-]+@byui\.edu' title="Please enter a valid email address" required></label>
-                <input type="submit" value="Rate Page">
+                <label>Last Name <input type="text" id="lname" name="lname" required></label>
+                <label>Title or Possition <input type="text" id="title" name="title" pattern="^[A-Za-z\- ]{7,}$"></label>
+                <label>Email <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" placeholder="user@example.com" required></label>
+                <label>Mobile Phone Number <input type="tel" id="phone" name="phone" pattern="[0-9]{5,}$" required></label>
             </fieldset>
-        </form>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/Organization Name <input type="text" id="business" name="business" required></label>
+                <label>Business/Organization Description <input type="text" id="description" name="description"></label>
+                <div id="membershipLvl">Membership Level</div>
+                <label class="radio"><input type="radio" name="membership" value="np">NP Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="gold">Gold Membership</label>
+                <input type="time" id="timestamp" name="timestamp" hidden>
+                <input type="submit" value="Join Chamber">
+            </fieldset>
+        </form>                    
+        <table class="benefitsTable">
+            <caption>Membership benefits table</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" class="tableTitle">
+                        ACME Wildwest Services
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>NP</th>
+                    <th>Bronze</th>
+                    <th>Silver</th>
+                    <th>Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feature 1</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr id="feature2">
+                    <td>Feature 2</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Feature 3</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey, United States</p>
