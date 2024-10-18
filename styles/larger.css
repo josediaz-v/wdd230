@@ -33,14 +33,6 @@
     body{
         height: 85%;
     }
-
-    .formMain {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-items: center;
-    }
-
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;

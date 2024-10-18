@@ -64,3 +64,15 @@
 .form1 input:required:valid {
     border-right: solid 8px var(--color3);
 }
+
+.formMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.thanks {
+    height: 45rem;
+    padding-top: 5rem;
+}

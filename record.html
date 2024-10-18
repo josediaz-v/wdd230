@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Record</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Jose Diaz, form assignment.">
+    <meta name="author" content="Jose Diaz">
+    <title>Jose Diaz - WDD 230 - Web Frontend Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
-
+            <img src="images/picture.webp" alt="Jose Diaz">
+            <span>Jose Diaz</span>
+            <div id="mode">🕶️</div>
     </header>
-    <nav>
-        
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
     </nav>
-    <main>
-        Thank you for rating our page.
+    <main class="formMain">
+        <div class="thanks"><p>Thank you for rating our page.</p></div>
     </main>
     <footer>
-
+        <p>&copy;<span id="year"></span> 🎮🎸 Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima, Perú ✈️ New Jersey, United States</p>
+        <p id="lastModified">Last Modification: </p>
     </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamButton.js"></script>
+    <script src="scripts/modeButton.js"></script>
+    <script src="scripts/visitsCounter.js"></script>
+    <script src="scripts/displayRangeValue.js"></script>
 </body>
 </html>
