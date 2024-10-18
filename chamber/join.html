@@ -45,13 +45,13 @@
             <fieldset>
                 <legend>Business Information</legend>
                 <label>Business/Organization Name <input type="text" id="business" name="business" required></label>
-                <label>Business/Organization Description <input type="text" id="description" name="description"></label>
+                <label>Business/Organization Description <textarea id="description" name="description"></textarea></label>
                 <div id="membershipLvl">Membership Level</div>
                 <label class="radio"><input type="radio" name="membership" value="np">NP Membership</label>
                 <label class="radio"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
                 <label class="radio"><input type="radio" name="membership" value="silver">Silver Membership</label>
                 <label class="radio"><input type="radio" name="membership" value="gold">Gold Membership</label>
-                <input type="time" id="timestamp" name="timestamp" hidden>
+                <input type="datetime-local" id="timestamp" name="timestamp" hidden>
                 <input type="submit" value="Join Chamber">
             </fieldset>
         </form>                    

@@ -222,11 +222,10 @@ figure img {
     padding-top: 1rem;
 }
 
-.joinForm input[type="text"], 
+.joinForm input[type="text"],
 .joinForm input[type="tel"],
 .joinForm input[type="email"] {
     background-color: var(--accent5-color);
-    display: block;
     border: solid 1px var(--accent2-color);
     border-radius: 6px;
     padding: .75rem;
@@ -234,6 +233,16 @@ figure img {
     width: 100%;
     max-width: 400px;
     appearance: none;
+}
+
+.joinForm textarea {
+    background-color: var(--accent5-color);
+    border: solid 1px var(--accent2-color);
+    padding: .75rem;
+    border-radius: 6px;
+    width: 400px;
+    height: 100px;
+    color: var(--primary-color);
 }
 
 .joinForm input[type="radio"] {
