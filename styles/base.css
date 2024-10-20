@@ -177,6 +177,15 @@ main a {
     padding-left: 1rem;
 }
 
+#information {
+    text-align: center;
+}
+
+#weather-icon {
+    position: relative;
+    top: 20px;
+}
+
 .iframe {
     display: block;
     margin: 0 auto;
