@@ -2,7 +2,6 @@ const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const links = document.querySelectorAll(".link");
 const body = document.querySelector("body");
-//const map = document.querySelector("iframe");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🕶️")) {
