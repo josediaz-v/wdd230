@@ -1,0 +1,57 @@
+{
+    "ward": "West New York",
+    "families": [
+        {
+            "familyName": "Diaz Falcon",
+            "movingDate": "03-15-2019",
+            "numberMembers": 4,
+            "visitedByBishopric": true,
+            "members": [
+                {
+                    "firstName": "Jose",
+                    "lastName": "Diaz",
+                    "gender": "M",
+                    "birthDate": "03-14-1987"
+                },
+                {
+                    "firstName": "Roxana",
+                    "lastName": "Falcon",
+                    "gender": "F",
+                    "birthDate": "12-01-1981"
+                },
+                {
+                    "firstName": "Mederick",
+                    "lastName": "Diaz",
+                    "gender": "M",
+                    "birthDate": "01-07-2013"
+                },
+                {
+                    "firstName": "Derek",
+                    "lastName": "Diaz",
+                    "gender": "M",
+                    "birthDate": "06-18-2016"
+                }
+            ]
+        },
+        {
+            "familyName": "Vargas Cabanillas",
+            "movingDate": "01-01-2020",
+            "numberMembers": 2,
+            "visitedByBishopric": false,
+            "members": [
+                {
+                    "firstName": "Alberto",
+                    "lastName": "Vargas",
+                    "gender": "M",
+                    "birthDate": "11-12-1962"
+                },
+                {
+                    "firstName": "Luz",
+                    "lastName": "Vargas",
+                    "gender": "F",
+                    "birthDate": "12-07-1964"
+                }
+            ]
+        }
+    ]
+}

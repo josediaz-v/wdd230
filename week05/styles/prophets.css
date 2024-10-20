@@ -1,0 +1,58 @@
+:root{
+    --color1: rgb(223, 223, 223);
+    --color2: rgb(60, 72, 143);
+    --color3: rgb(168, 174, 207);
+    --color4: rgb(114, 114, 114);
+    --paragraph-font: 'Merriweather', Georgia, serif;
+    --title-font: 'Roboto', serif;
+}
+
+header h1{
+    text-align: center;
+    color: var(--color2);    
+    font-size: 3rem;
+    font-family: var(--title-font);
+}
+
+#cards {
+    text-align: center;
+    background-color: var(--color1);
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid 20px var(--color1);
+    box-shadow: 1px 1px 30px var(--color4);
+}
+
+#cards h2 {
+    color: var(--color2);
+    font-size: 3rem;
+    font-family: var(--title-font);
+}
+
+#cards p {
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+    font-weight: 540;
+}
+
+#cards section {
+    background-color: var(--color3);
+    border: solid 1px var(--color2);
+    margin: 5px;
+    padding: 1rem;
+}
+
+#cards img {
+    box-shadow: 1px 1px 15px var(--color4);
+}
+
+@media screen and (min-width: 600px) {
+    #cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }    
+
+    header h1{
+        font-size: 4rem;
+    }
+
+}
