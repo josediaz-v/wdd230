@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "GNS Trading",
+            "address": "321 79th st, North Bergen, NJ 07631",
+            "phone": "(201)569-5085",
+            "url": "https://gnsny.com/",
+            "icon": "https://gnsny.com/cdn/shop/files/Screenshot_2024-05-29_114315.png?v=1716997433",
+            "membership": "Gold"
+        },
+        {
+            "name": "New Jersey Beer Company",
+            "address": "4201 Tonnelle Ave, North Bergen, NJ 07047",
+            "phone": "(201) 758-8342",
+            "url": "https://www.njbeerco.com/",
+            "icon": "https://images.squarespace-cdn.com/content/v1/63645bc0a670431ca2b897b1/9aad361a-0829-4e4d-9da0-4ad36a56342e/NJBC+logo-02.png?format=1500w",
+            "membership": "Silver"
+        },
+        {
+            "name": "Hudson Bread division of Prestige Bread Co.",
+            "address": "5601-5711 Tonnelle Ave, North Bergen, NJ 07047",
+            "phone": "(201) 422-7900",
+            "url": "https://hudsonbread.com/",
+            "icon": "https://hudsonbread.com/wp-content/uploads/2020/07/HudsonBread-logo-back.svg",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Tilcon New York Inc. | North Bergen",
+            "address": "2414 95th St, North Bergen, NJ 07047",
+            "phone": "(201) 854-2815",
+            "url": "https://www.tilconny.com/",
+            "icon": "https://lh3.googleusercontent.com/p/AF1QipPsWLXFBNOYi5Vp-Srvv9s3P0K47r4PEMB6jdK8=s1360-w1360-h1020",
+            "membership": "Gold"
+        },
+        {
+            "name": "National Retail Systems, Inc.",
+            "address": "2820 16th St, North Bergen, NJ 07047",
+            "phone": "(201) 330-1900",
+            "url": "https://nrs3pl.com/",
+            "icon": "https://nrs3pl.com/wp-content/uploads/2021/04/nrs-knockout.svg",
+            "membership": "NP"
+        },
+        {
+            "name": "Bergen Logistics",
+            "address": "5903 West Side Ave, North Bergen, NJ 07047",
+            "phone": "(201) 854-1512",
+            "url": "https://bergenlogistics.com/?utm_campaign=gmb_5903NJ&utm_medium=local-organic&utm_source=gmb_listing_5903NJ",
+            "icon": "https://bergenlogistics.com/assets/img/images/logo/header-bergen-elanders-logo.png",
+            "membership": "Silver"
+        },
+        {
+            "name": "Fresh Media Workshop",
+            "address": "7001 Anpesil Dr Office 2, North Bergen, NJ 07047",
+            "phone": "(201) 308-3858",
+            "url": "https://www.freshmediaws.com/",
+            "icon": "https://static.wixstatic.com/media/d0606a_1e846dc8fd4c49b48a7ad76ea4ecac7e~mv2.png/v1/fill/w_778,h_331,al_c,lg_1,q_85,enc_auto/d0606a_1e846dc8fd4c49b48a7ad76ea4ecac7e~mv2.png",
+            "membership": "Bronze"
+        }
+    ]
+}

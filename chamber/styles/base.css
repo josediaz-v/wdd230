@@ -348,6 +348,36 @@ figure img {
     padding-top: 1rem;
 }
 
+/* Directory Cards */
+
+.indexDirectory #cards {
+    text-align: center;
+    background-color: var(--color1);
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid 20px var(--color1);
+    box-shadow: 1px 1px 30px var(--color4);
+}
+
+.indexDirectory #cards h2 {
+    color: var(--color2);
+    font-size: 3rem;
+    font-family: var(--title-font);
+}
+
+.indexDirectory #cards p {
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+    font-weight: 540;
+}
+
+.indexDirectory #cards section {
+    background-color: var(--color3);
+    border: solid 1px var(--color2);
+    margin: 5px;
+    padding: 1rem;
+}
+
 /* Footer */
 footer{
     font-family: var(--text-font);
