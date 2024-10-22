@@ -130,5 +130,13 @@
     .thankyouMain {
         align-items: baseline;
     }
+    
+    .directoryMain #cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }    
 
+    .list section img {
+        display:inline;
+        margin-bottom: 1rem;
+    }
 }

@@ -26,22 +26,27 @@
     <button id="menu"></button>
     <nav class="navigation">
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="">Directory</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main class="indexDirectory">
-        <div id="cards"></div>
+    <main class="directoryMain">
+        <div class="directoryMenu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div id="cards" class="grid"></div>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey, United States</p>
         <p id="lastModified">Last Modification: </p>
     </footer>
-    <script src="scripts/getDates.js"></script>
     <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/getDate.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/directory.js"></script>
+    <script src="scripts/gridView.js"></script>
 </body>
 </html>

@@ -349,33 +349,89 @@ figure img {
 }
 
 /* Directory Cards */
-
-.indexDirectory #cards {
+.directoryMain #cards {
     text-align: center;
-    background-color: var(--color1);
-    display: grid;
+    background-color: var(--accent1-color);
     grid-template-columns: 1fr;
     border: solid 20px var(--color1);
     box-shadow: 1px 1px 30px var(--color4);
 }
 
-.indexDirectory #cards h2 {
-    color: var(--color2);
-    font-size: 3rem;
-    font-family: var(--title-font);
+.directoryMain #cards a {
+    color: var(--accent2-color);
 }
 
-.indexDirectory #cards p {
-    font-family: var(--paragraph-font);
-    font-size: 1.5rem;
-    font-weight: 540;
+.directoryMain #cards a:hover {
+    color: var(--tertiary-color);
 }
 
-.indexDirectory #cards section {
-    background-color: var(--color3);
+.directoryMain #cards section {
+    display: block;
+    background-color: var(--accent6-color);
     border: solid 1px var(--color2);
     margin: 5px;
-    padding: 1rem;
+    min-width: 300px;
+}
+
+.directoryMain #cards img {
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 15px var(--primary-color);
+    position: relative;
+    height: auto;
+    max-width: 150px;
+    max-height: 100px;
+    top: 1rem;;
+}
+
+/* Grid/List View*/
+.directoryMenu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: var(--accent6-color);
+	text-align: center;
+}
+
+.directoryMenu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list p {
+    margin: 0;
+    padding: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.list section {
+	display: grid;
+}
+
+.list section img {
+	display: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid p {
+    margin: 0;
+    padding: 5px;
+    margin-bottom: 0.5rem;
+}
+ .grid img {
+    margin-bottom: 2rem;
+ }
+
+.grid section {
+    max-height: 500px;
 }
 
 /* Footer */
