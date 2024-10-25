@@ -23,6 +23,7 @@ async function getLinks() {
 
 const displayLinks = (weeks) => {
     weeks.forEach((week) => {
+        separator = ' | '
         const weekLi = document.createElement('li');
         const weekName = document.createElement('p');
 
@@ -31,14 +32,17 @@ const displayLinks = (weeks) => {
 
         weekName.textContent = `${week.week}: `;
 
-        (week.links).forEach((link) => {
+        (week.links).forEach((link, index) => {
             const linkA = document.createElement('a');
-
             weekLi.appendChild(linkA);
 
             linkA.setAttribute('href', link.url);
             linkA.setAttribute('target', '_blank');
-            linkA.textContent = `| ${link.title} | `;
+            linkA.textContent = `${link.title}`;
+            weekName.appendChild(linkA);
+            if (index < week.links.length - 1){
+                weekName.append(separator);
+            }
         });
     });
 }
