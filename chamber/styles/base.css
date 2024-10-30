@@ -40,7 +40,8 @@ header h1{
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
-    color: var(--accent3-color);
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 #menu {
@@ -111,6 +112,25 @@ a{
     text-decoration: underline;
 }
 
+/* Banner */
+.banner {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+.banner button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Main */
 main{
     display: grid;
     grid-gap: 1rem;
@@ -432,6 +452,42 @@ figure img {
 
 .grid section {
     max-height: 500px;
+}
+
+/* Weather Section */
+.indexWeather li{
+    position: relative;
+    list-style-type:none;
+    top: -30px;
+}
+
+.indexWeather h4 {
+    position: relative;
+    top: 30px;
+}
+
+.weather-icon {
+    position: relative;
+    height: 50px;
+    width: auto;
+}
+
+.future-weather-icon {
+    position: relative;
+    height: 50px;
+    width: auto;
+    top: 30px;
+}
+
+#current-temp, #weather-descr {
+    position: relative;
+    top: -35px;
+}
+
+/* Spotlight */
+.spotlights a
+{
+    color: var(--primary-color);
 }
 
 /* Footer */

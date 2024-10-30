@@ -18,6 +18,10 @@
     <meta property="og:url" content="https://www.jdiaz.com" />
 </head>
 <body>
+    <div id="meet-greet-banner" class="banner" style="display: none;">
+        <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+        <button id="close-banner">❌</button>
+    </div>
     <header>
         <img src="images/logo.webp" alt="North Bergen">
         <h1>NORTH BERGEN CHAMBER OF COMMERCE</h1>
@@ -43,8 +47,11 @@
         </section>
         <section class="indexWeather">
             <h2>Weather Card</h2>
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-50535a9b-a163-4486-9c3e-4d0ac854f757" data-elfsight-app-lazy></div>
+            <img id="weather-icon" class="weather-icon" src="tobeloaded" alt="">
+            <span id="current-temp"></span>
+            <span id="weather-descr"></span>
+            <h4>Next 3 days forecast:</h4>
+            <ul id="future-temp"></ul>
         </section>
         <section class="indexEvents">
             <h2>Current Events</h2>
@@ -56,7 +63,7 @@
         </section>
         <section class="spotlights">
             <h2>Spotlights</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eos dolores corporis fugiat sequi esse cum neque, itaque et eaque molestias rem optio fugit exercitationem ab placeat quidem culpa ipsa? Beatae quae ex quo est id sed perferendis adipisci optio sint autem perspiciatis omnis inventore aliquid ut, non aspernatur cupiditate?</p>
+            <span id="spotlight"></span>
         </section>
     </main>
     <footer>
@@ -66,5 +73,9 @@
     <script src="scripts/getDate.js"></script>
     <script src="scripts/hamMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/futureWeather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

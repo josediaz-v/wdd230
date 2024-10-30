@@ -139,4 +139,14 @@
         display:inline;
         margin-bottom: 1rem;
     }
+
+    /* Weather Section */
+    .weather-icon {
+        top: 35px;
+    }
+    
+    #current-temp, #weather-descr {
+        position: relative;
+        top: 0;
+    }
 }
